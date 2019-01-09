@@ -1,0 +1,22 @@
+{
+  "name": "inga-api",
+  "version": "1.0.0",
+  "description": "API for Inga",
+  "main": "app.js",
+  "scripts": {
+    "create-migration": "knex migrate:make initial_schema",
+    "migrate-run": "knex migrate:latest",
+    "migrate-rollback": "knex migrate:rollback",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "mysql2": "^1.6.4",
+    "objection": "^1.4.0"
+  }
+}
